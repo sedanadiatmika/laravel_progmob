@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        // 'http://192.168.1.5:80/api/poli',
+
     ];
 }

@@ -29,5 +29,15 @@ Route::group(['middleware' => 'auth:api'], function(){
         Route::post('/edit','api\userController@edit');
 
     });
-    
 });
+Route::post('poli/simpan', 'api\PoliController@simpan');
+Route::resource('poli/', 'api\PoliController');
+
+Route::resource('pendaftaran', 'api\pendaftaranController');
+Route::post ('pendaftaran/hide', 'api\pendaftaranController@hide');
+Route::post ('pendaftaran/read', 'api\pendaftaranController@read');
+Route::post ('pendaftaran/readall', 'api\pendaftaranController@readAll');
+Route::get ('pendaftaran/readalln', 'api\pendaftaranController@readAllNEW');
+
+
+
